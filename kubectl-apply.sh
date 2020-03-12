@@ -1,3 +1,5 @@
 #!/bin/sh
 
-echo "this script allows you to kubectl apply resources or CRDs"
+echo "applying CRDs"
+
+kubectl apply -f https://raw.githubusercontent.com/weaveworks/flagger/master/artifacts/flagger/crd.yaml
