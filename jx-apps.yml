@@ -4,7 +4,7 @@ apps:
 - name: jenkins-x/jxboot-helmfile-resources
 - name: jenkins-x/lighthouse
 - name: jenkins-x/tekton
-#- name: jenkins-x/chartmuseum
+- name: jenkins-x/chartmuseum
 - name: jenkins-x/bucketrepo
 - name: jenkins-x/jx-app-ui
 - name: repositories
