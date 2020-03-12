@@ -1,21 +1,83 @@
+autoUpdate:
+  enabled: false
+  schedule: ""
 bootConfigURL: https://github.com/jenkins-x/jenkins-x-boot-helmfile-config
 cluster:
+  chartRepository: http://bucketrepo/bucketrepo/charts/
+  clusterName: bucketrepo
+  devEnvApprovers:
+  - jstrachan
+  environmentGitOwner: jstrachan
   gitKind: github
   gitName: github
   gitServer: https://github.com
   namespace: jx
+  project: jstrachan-multicluster
+  provider: gke
+  registry: gcr.io
+  zone: europe-west1-d
 environments:
-- key: dev
-- key: staging
-  remoteCluster: false
-- key: production
-  remoteCluster: false
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: dev
+  repository: environment-bucketrepo-dev
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: staging
+  repository: environment-bucketrepo-staging
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: production
+  repository: environment-bucketrepo-production
 gitops: true
 helmfile: true
+ingress:
+  domain: ""
+  externalDNS: false
+  namespaceSubDomain: -jx.
+  tls:
+    email: ""
+    enabled: false
+    production: false
 kaniko: true
-repository: nexus
+repository: bucketrepo
 secretStorage: local
+storage:
+  backup:
+    enabled: false
+    url: ""
+  logs:
+    enabled: false
+    url: ""
+  reports:
+    enabled: false
+    url: ""
+  repository:
+    enabled: false
+    url: ""
+vault: {}
+velero:
+  schedule: ""
+  ttl: ""
 versionStream:
-  ref: master
+  ref: v2.0.4
   url: https://github.com/jenkins-x-labs/jenkins-x-versions.git
 webhook: lighthouse
