@@ -1,5 +1,6 @@
 apps:
 - name: stable/nginx-ingress
+- name: flagger/flagger
 - name: jenkins-x/jxboot-helmfile-resources
 - name: jenkins-x/lighthouse
 - name: jenkins-x/tekton
