@@ -1,8 +1,6 @@
 apps:
 - name: stable/nginx-ingress
-- name: stable/kuberhealthy
 - name: flagger/flagger
-- name: flagger/grafana
 - name: jenkins-x/jxboot-helmfile-resources
 - name: jenkins-x/lighthouse
 - name: jenkins-x/tekton
