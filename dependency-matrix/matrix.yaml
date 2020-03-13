@@ -1,7 +1,7 @@
 dependencies:
 - host: github.com
   owner: jstrachan
-  repo: nodey431
-  url: https://github.com/jstrachan/nodey431.git
+  repo: nodey433
+  url: https://github.com/jstrachan/nodey433.git
   version: ""
   versionURL: ""
