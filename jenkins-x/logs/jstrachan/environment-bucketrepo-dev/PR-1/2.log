@@ -1,0 +1,138 @@
+
+Showing logs for build [32mjstrachan-environment-bucketrep-cwdlx-2[0m stage [32mpr-checks[0m and container [32mstep-credential-initializer-r66fg[0m
+{"level":"warn","ts":1584092290.6006985,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584092290.6011968,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjstrachan-environment-bucketrep-cwdlx-2[0m stage [32mpr-checks[0m and container [32mstep-working-dir-initializer-7v2bh[0m
+{"level":"warn","ts":1584092291.0593512,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1584092291.0605328,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjstrachan-environment-bucketrep-cwdlx-2[0m stage [32mpr-checks[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjstrachan-environment-bucketrep-cwdlx-2[0m stage [32mpr-checks[0m and container [32mstep-git-source-jstrachan-environment-bucketrep-cwdlx-t5lps[0m
+{"level":"warn","ts":1584092297.1863399,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584092298.2124233,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/environment-bucketrepo-dev.git @ master in path /workspace/source"}
+
+Showing logs for build [32mjstrachan-environment-bucketrep-cwdlx-2[0m stage [32mpr-checks[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:ef203bfb275135ac266c2aa1aa5d2ec79aebbf89,1:104830de40098c695828fda84e166fb244ab9c2a
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git fetch origin --unshallow 104830de40098c695828fda84e166fb244ab9c2a: ef203bfb275135ac266c2aa1aa5d2ec79aebbf89:
+DEBUG: ran git fetch --unshallow origin 104830de40098c695828fda84e166fb244ab9c2a: ef203bfb275135ac266c2aa1aa5d2ec79aebbf89: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard ef203bfb275135ac266c2aa1aa5d2ec79aebbf89
+DEBUG: ran git reset --hard ef203bfb275135ac266c2aa1aa5d2ec79aebbf89 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge 104830de40098c695828fda84e166fb244ab9c2a
+DEBUG: ran git merge 104830de40098c695828fda84e166fb244ab9c2a in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e ef203bfb275135ac266c2aa1aa5d2ec79aebbf89..HEAD
+Merged SHA b550821b1a8d24349e6ec2450209f293c6cedae5 with commit message 'Merge commit '104830de40098c695828fda84e166fb244ab9c2a'' into base branch master
+Merged SHA 104830de40098c695828fda84e166fb244ab9c2a with commit message 'chore(deps): bump https://github.com/*********/nodey433.git' into base branch master
+Merged SHA f62431d262413172098b50e725a27a9ed2e94536 with commit message 'fix: add **ui' into base branch master
+Merged SHA 7ec12634e6d7df3a42ae1cecaf8624ae8b8f3da5 with commit message 'chore(config): update configuration' into base branch master
+Merged SHA e7920e756176b9329f6fb64e49dc34caeff07ba6 with commit message 'fix: add grafana' into base branch master
+Merged SHA efa8b606628a766bdff3e5e6d0c87171be684baa with commit message 'fix: use latest version stream' into base branch master
+Merged SHA 8b90de93eccbdcae95a12ca37069fc94fffb99bf with commit message 'fix: add kuberheathy' into base branch master
+Merged SHA 529b86368b9d474b0dcefc635db347c00e1b02b8 with commit message 'fix: latest version stream' into base branch master
+Merged SHA ee2fc883e927bf3729e0f704bb7af9666a676bb3 with commit message 'fix: upgrade version stream' into base branch master
+Merged SHA d9dba726fa6dae0d44a73f4b7ae2d8fce6dfaa44 with commit message 'fix: add chartmsuem' into base branch master
+Merged SHA 9be216bd40ea780478023e7409430eabf2fd8034 with commit message 'fix: upgrade version stream' into base branch master
+Merged SHA 718f3774de2392d35ad3bf6a5f468835f6770686 with commit message 'fix: add flagger' into base branch master
+Merged SHA b16cecc767e5aa0b9a6ca5ce3f38f209ea19af13 with commit message 'chore(deps): bump https://github.com/*********/nodey431.git' into base branch master
+
+Showing logs for build [32mjstrachan-environment-bucketrep-cwdlx-2[0m stage [32mpr-checks[0m and container [32mstep-create-helmfile[0m
+
+Showing logs for build [32mjstrachan-environment-bucketrep-cwdlx-2[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-system[0m
+Adding repo flagger https://flagger.app
+"flagger" has been added to your repositories
+
+Adding repo stable https://kubernetes-charts.storage.googleapis.com
+"stable" has been added to your repositories
+
+Updating repo
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "flagger" chart repository
+...Successfully got an update from the "stable" chart repository
+Update Complete. ⎈ Happy Helming!⎈ 
+
+Fetching stable/nginx-ingress
+Fetching stable/kuberhealthy
+Fetching flagger/flagger
+Linting release=nginx-ingress, chart=/tmp/691050111/nginx-ingress/1.33.5/stable/nginx-ingress/nginx-ingress
+==> Linting /tmp/691050111/nginx-ingress/1.33.5/stable/nginx-ingress/nginx-ingress
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=kuberhealthy, chart=/tmp/691050111/kuberhealthy/1.2.6/stable/kuberhealthy/kuberhealthy
+==> Linting /tmp/691050111/kuberhealthy/1.2.6/stable/kuberhealthy/kuberhealthy
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=flagger, chart=/tmp/691050111/flagger/0.24.0/flagger/flagger/flagger
+==> Linting /tmp/691050111/flagger/0.24.0/flagger/flagger/flagger
+
+1 chart(s) linted, 0 chart(s) failed
+
+
+Showing logs for build [32mjstrachan-environment-bucketrep-cwdlx-2[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-apps[0m
+Adding repo flagger https://flagger.app
+"flagger" has been added to your repositories
+
+Adding repo jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
+
+Updating repo
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "flagger" chart repository
+...Successfully got an update from the "stable" chart repository
+...Successfully got an update from the "jenkins-x" chart repository
+Update Complete. ⎈ Happy Helming!⎈ 
+
+Building dependency release=repositories, chart=../repositories
+Fetching flagger/grafana
+Fetching jenkins-x/**boot-helmfile-resources
+Fetching jenkins-x/lighthouse
+Fetching jenkins-x/tekton
+Fetching jenkins-x/bucketrepo
+Fetching jenkins-x/**-app-ui
+Linting release=grafana, chart=/tmp/559799621/grafana/1.4.0/flagger/grafana/grafana
+==> Linting /tmp/559799621/grafana/1.4.0/flagger/grafana/grafana
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=**boot-helmfile-resources, chart=/tmp/559799621/**boot-helmfile-resources/0.0.89/jenkins-x/**boot-helmfile-resources/**boot-helmfile-resources
+==> Linting /tmp/559799621/**boot-helmfile-resources/0.0.89/jenkins-x/**boot-helmfile-resources/**boot-helmfile-resources
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=lighthouse, chart=/tmp/559799621/lighthouse/0.0.485/jenkins-x/lighthouse/lighthouse
+==> Linting /tmp/559799621/lighthouse/0.0.485/jenkins-x/lighthouse/lighthouse
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=tekton, chart=/tmp/559799621/tekton/0.0.48/jenkins-x/tekton/tekton
+==> Linting /tmp/559799621/tekton/0.0.48/jenkins-x/tekton/tekton
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=bucketrepo, chart=/tmp/559799621/bucketrepo/0.1.35/jenkins-x/bucketrepo/bucketrepo
+==> Linting /tmp/559799621/bucketrepo/0.1.35/jenkins-x/bucketrepo/bucketrepo
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=**-app-ui, chart=/tmp/559799621/**-app-ui/latest/jenkins-x/**-app-ui/**-app-ui
+==> Linting /tmp/559799621/**-app-ui/latest/jenkins-x/**-app-ui/**-app-ui
+[ERROR] templates/: values don't meet the specifications of the schema(s) in the following chart(s):
+**-app-ui:
+- **ui: Must validate "then" as "if" was valid
+- **ui.sso.create: **ui.sso.create does not match: "true"
+- **ui.sso.domain: Invalid type. Expected: string, given: null
+- **ui.sso.oidcIssuerUrl: Invalid type. Expected: string, given: null
+
+
+
+in ./helmfile.yaml: helm exited with status 1:
+  Error: 1 chart(s) linted, 1 chart(s) failed
+[31m
+Pipeline failed on stage 'pr-checks' : container 'step-lint-helmfile-apps'. The execution of the pipeline has stopped.[0m
