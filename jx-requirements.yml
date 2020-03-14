@@ -19,7 +19,7 @@ cluster:
   zone: europe-west1-d
 environments:
 - ingress:
-    domain: 35.233.11.180.nip.io
+    domain: 34.76.61.93.nip.io
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
@@ -50,9 +50,8 @@ environments:
   repository: environment-bucketrepo-production
 gitops: true
 helmfile: true
-terraform: true
 ingress:
-  domain: 35.233.11.180.nip.io
+  domain: 34.76.61.93.nip.io
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
@@ -75,11 +74,12 @@ storage:
   repository:
     enabled: false
     url: ""
+terraform: true
 vault: {}
 velero:
   schedule: ""
   ttl: ""
 versionStream:
-  ref: master
+  ref: v2.0.19
   url: https://github.com/jenkins-x-labs/jenkins-x-versions.git
 webhook: lighthouse
