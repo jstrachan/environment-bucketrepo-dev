@@ -11,6 +11,7 @@ cluster:
   gitKind: github
   gitName: github
   gitServer: https://github.com
+  kanikoSAName: bucketrepo3-ko
   namespace: jx
   project: jstrachan-multicluster
   provider: gke
@@ -49,6 +50,7 @@ environments:
   repository: environment-bucketrepo-production
 gitops: true
 helmfile: true
+terraform: true
 ingress:
   domain: 35.233.11.180.nip.io
   externalDNS: false
