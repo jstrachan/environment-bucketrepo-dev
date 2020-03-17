@@ -1,26 +1,26 @@
 
-Showing logs for build [32mjstrachan-environment-bucketrep-bwb8x-3[0m stage [32mrelease[0m and container [32mstep-credential-initializer-p297r[0m
-{"level":"warn","ts":1584025386.872485,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1584025386.8730226,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mjstrachan-environment-bucketrep-pbn88-3[0m stage [32mrelease[0m and container [32mstep-credential-initializer-xc8sp[0m
+{"level":"warn","ts":1584451789.8466988,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584451789.847206,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mjstrachan-environment-bucketrep-bwb8x-3[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-6zgnj[0m
-{"level":"warn","ts":1584025387.8805742,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1584025387.8814917,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mjstrachan-environment-bucketrep-pbn88-3[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-6wlms[0m
+{"level":"warn","ts":1584451790.8658066,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1584451790.8675597,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mjstrachan-environment-bucketrep-bwb8x-3[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-pbn88-3[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mjstrachan-environment-bucketrep-bwb8x-3[0m stage [32mrelease[0m and container [32mstep-git-source-jstrachan-environment-bucketrep-bwb8x-7gng7[0m
-{"level":"warn","ts":1584025395.9347768,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1584025396.961477,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/environment-bucketrepo-dev.git @ v0.0.3 in path /workspace/source"}
+Showing logs for build [32mjstrachan-environment-bucketrep-pbn88-3[0m stage [32mrelease[0m and container [32mstep-git-source-jstrachan-environment-bucketrep-pbn88-8vphc[0m
+{"level":"warn","ts":1584451799.1823885,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584451800.213748,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/environment-bucketrepo-dev.git @ v0.0.19 in path /workspace/source"}
 
-Showing logs for build [32mjstrachan-environment-bucketrep-bwb8x-3[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:67f2f3100e2fc4f3fda45643b8a99201bad530ba
+Showing logs for build [32mjstrachan-environment-bucketrep-pbn88-3[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:6329e66fab3f992acf2ebf81fa7ee3949bd6ef72
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mjstrachan-environment-bucketrep-bwb8x-3[0m stage [32mrelease[0m and container [32mstep-validate-git[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-pbn88-3[0m stage [32mrelease[0m and container [32mstep-validate-git[0m
 Git configured for user: jenkins-x-bot and email jenkins-x@googlegroups.com
 
-Showing logs for build [32mjstrachan-environment-bucketrep-bwb8x-3[0m stage [32mrelease[0m and container [32mstep-verify-preinstall[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-pbn88-3[0m stage [32mrelease[0m and container [32mstep-verify-preinstall[0m
 no need to reconnect to cluster
 writing the following to the OWNERS file for the development environment repository:
 approvers:
@@ -29,9 +29,9 @@ reviewers:
 - *********
 WARNING: TLS is not enabled so your webhooks will be called using HTTP. This means your webhook secret will be sent to your cluster in the clear. See https://jenkins-x.io/docs/getting-started/setup/boot/#ingress for more information
 Verifying the kubernetes cluster before we try to boot Jenkins X in namespace: **
-Trying to lazily create any missing resources to get the current cluster ready to boot Jenkins X
+WARNING: Lazy create of cloud resources is disabled
 Verifying Ingress...
-Clearing the domain 35.233.11.180.nip.io as when using auto-DNS domains we need to regenerate to ensure its always accurate in case the cluster or ingress service is recreated
+Clearing the domain 34.76.61.93.nip.io as when using auto-DNS domains we need to regenerate to ensure its always accurate in case the cluster or ingress service is recreated
 
 Using namespace '**' from context named '' on server ''.
 
@@ -49,18 +49,15 @@ verified there is a ConfigMap plugins in namespace **
 Cluster looks good, you are ready to '** boot' now!
 
 
-Showing logs for build [32mjstrachan-environment-bucketrep-bwb8x-3[0m stage [32mrelease[0m and container [32mstep-install-jx-crds[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-pbn88-3[0m stage [32mrelease[0m and container [32mstep-install-jx-crds[0m
 Jenkins X CRDs upgraded with success
 
-Showing logs for build [32mjstrachan-environment-bucketrep-bwb8x-3[0m stage [32mrelease[0m and container [32mstep-generate-helmfile[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-pbn88-3[0m stage [32mrelease[0m and container [32mstep-generate-helmfile[0m
 
-Showing logs for build [32mjstrachan-environment-bucketrep-bwb8x-3[0m stage [32mrelease[0m and container [32mstep-kubectl-apply[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-pbn88-3[0m stage [32mrelease[0m and container [32mstep-kubectl-apply[0m
 applying CRDs
-customresourcedefinition.apiextensions.k8s.io/canaries.flagger.app unchanged
-customresourcedefinition.apiextensions.k8s.io/metrictemplates.flagger.app unchanged
-customresourcedefinition.apiextensions.k8s.io/alertproviders.flagger.app unchanged
 
-Showing logs for build [32mjstrachan-environment-bucketrep-bwb8x-3[0m stage [32mrelease[0m and container [32mstep-helmfile-system[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-pbn88-3[0m stage [32mrelease[0m and container [32mstep-helmfile-system[0m
 Adding repo flagger https://flagger.app
 "flagger" has been added to your repositories
 
@@ -75,29 +72,62 @@ Update Complete. ⎈ Happy Helming!⎈
 
 Affected releases are:
   flagger (flagger/flagger) UPDATED
+  grafana (flagger/grafana) UPDATED
+  kuberhealthy (stable/kuberhealthy) UPDATED
   nginx-ingress (stable/nginx-ingress) UPDATED
 
 Upgrading release=nginx-ingress, chart=stable/nginx-ingress
+Upgrading release=kuberhealthy, chart=stable/kuberhealthy
+Upgrading release=grafana, chart=flagger/grafana
 Upgrading release=flagger, chart=flagger/flagger
 Listing releases matching ^flagger$
 Release "flagger" has been upgraded. Happy Helming!
 NAME: flagger
-LAST DEPLOYED: Thu Mar 12 15:03:43 2020
+LAST DEPLOYED: Tue Mar 17 13:30:25 2020
 NAMESPACE: istio-system
 STATUS: deployed
-REVISION: 4
+REVISION: 7
 TEST SUITE: None
 NOTES:
 Flagger installed
 
-flagger	istio-system	4       	2020-03-12 15:03:43.373794227 +0000 UTC	deployed	flagger-0.24.0	1.0.0-rc.1 
+flagger	istio-system	7       	2020-03-17 13:30:25.1445459 +0000 UTC	deployed	flagger-0.24.0	1.0.0-rc.1 
 
+Release "grafana" has been upgraded. Happy Helming!
+NAME: grafana
+LAST DEPLOYED: Tue Mar 17 13:30:25 2020
+NAMESPACE: istio-system
+STATUS: deployed
+REVISION: 7
+TEST SUITE: None
+NOTES:
+1. Run the port forward command:
+
+kubectl -n istio-system port-forward svc/grafana 3000:80
+
+2. Navigate to:
+
+Listing releases matching ^grafana$
+http://localhost:3000
+
+grafana	istio-system	7       	2020-03-17 13:30:25.492086971 +0000 UTC	deployed	grafana-1.4.0	6.5.1      
+
+Release "kuberhealthy" has been upgraded. Happy Helming!
+NAME: kuberhealthy
+LAST DEPLOYED: Tue Mar 17 13:30:27 2020
+NAMESPACE: istio-system
+STATUS: deployed
+REVISION: 7
+TEST SUITE: None
+
+Listing releases matching ^kuberhealthy$
+Listing releases matching ^nginx-ingress$
 Release "nginx-ingress" has been upgraded. Happy Helming!
 NAME: nginx-ingress
-LAST DEPLOYED: Thu Mar 12 15:03:44 2020
+LAST DEPLOYED: Tue Mar 17 13:30:27 2020
 NAMESPACE: nginx
 STATUS: deployed
-REVISION: 5
+REVISION: 7
 TEST SUITE: None
 NOTES:
 The nginx-ingress controller has been installed.
@@ -140,213 +170,151 @@ If TLS is enabled for the Ingress, a Secret containing the certificate and key m
     tls.key: <base64 encoded key>
   type: kubernetes.io/tls
 
-Listing releases matching ^nginx-ingress$
-nginx-ingress	nginx    	5       	2020-03-12 15:03:44.984491592 +0000 UTC	deployed	nginx-ingress-1.33.5	0.30.0     
+nginx-ingress	nginx    	7       	2020-03-17 13:30:27.735950302 +0000 UTC	deployed	nginx-ingress-1.33.5	0.30.0     
+
+kuberhealthy	istio-system	7       	2020-03-17 13:30:27.715035291 +0000 UTC	deployed	kuberhealthy-1.2.6	v1.0.2     
 
 
 UPDATED RELEASES:
 NAME            CHART                  VERSION
 flagger         flagger/flagger         0.24.0
+grafana         flagger/grafana          1.4.0
+kuberhealthy    stable/kuberhealthy      1.2.6
 nginx-ingress   stable/nginx-ingress    1.33.5
 
 
-Showing logs for build [32mjstrachan-environment-bucketrep-bwb8x-3[0m stage [32mrelease[0m and container [32mstep-verify-ingress[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-pbn88-3[0m stage [32mrelease[0m and container [32mstep-verify-ingress[0m
 Waiting to find the external host name of the ingress controller Service in namespace nginx with name nginx-ingress-controller
-No domain flag provided so using default 35.233.11.180.nip.io to generate Ingress rules
-defaulting the domain to 35.233.11.180.nip.io and modified /workspace/source/**-requirements.yml
+No domain flag provided so using default 34.76.61.93.nip.io to generate Ingress rules
+defaulting the domain to 34.76.61.93.nip.io and modified /workspace/source/**-requirements.yml
 
-Showing logs for build [32mjstrachan-environment-bucketrep-bwb8x-3[0m stage [32mrelease[0m and container [32mstep-helmfile-apps[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-pbn88-3[0m stage [32mrelease[0m and container [32mstep-helmfile-apps[0m
+Adding repo jenkins-x http://chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
+
 Adding repo jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
 "jenkins-x" has been added to your repositories
 
 Updating repo
 Hang tight while we grab the latest from your chart repositories...
 ...Successfully got an update from the "flagger" chart repository
-...Successfully got an update from the "jenkins-x" chart repository
 ...Successfully got an update from the "stable" chart repository
+...Successfully got an update from the "jenkins-x" chart repository
 Update Complete. ⎈ Happy Helming!⎈ 
 
 Building dependency release=repositories, chart=../repositories
 Affected releases are:
   bucketrepo (jenkins-x/bucketrepo) UPDATED
-  chartmuseum (jenkins-x/chartmuseum) UPDATED
+  istio (**-labs/istio) UPDATED
   **boot-helmfile-resources (jenkins-x/**boot-helmfile-resources) UPDATED
+  **ui (jenkins-x/**ui) UPDATED
   lighthouse (jenkins-x/lighthouse) UPDATED
   repositories (../repositories) UPDATED
   tekton (jenkins-x/tekton) UPDATED
 
-Upgrading release=lighthouse, chart=jenkins-x/lighthouse
+Upgrading release=tekton, chart=jenkins-x/tekton
 Upgrading release=**boot-helmfile-resources, chart=jenkins-x/**boot-helmfile-resources
+Upgrading release=**ui, chart=jenkins-x/**ui
+Upgrading release=istio, chart=**-labs/istio
 Upgrading release=repositories, chart=../repositories
 Upgrading release=bucketrepo, chart=jenkins-x/bucketrepo
-Upgrading release=chartmuseum, chart=jenkins-x/chartmuseum
-Upgrading release=tekton, chart=jenkins-x/tekton
+Upgrading release=lighthouse, chart=jenkins-x/lighthouse
 Release "repositories" has been upgraded. Happy Helming!
 NAME: repositories
-LAST DEPLOYED: Thu Mar 12 15:03:53 2020
+LAST DEPLOYED: Tue Mar 17 13:30:38 2020
 NAMESPACE: **
 STATUS: deployed
-REVISION: 5
+REVISION: 7
 TEST SUITE: None
 
 Listing releases matching ^repositories$
-repositories	**       	5       	2020-03-12 15:03:53.314243167 +0000 UTC	deployed	repositories-1	           
+repositories	**       	7       	2020-03-17 13:30:38.673103245 +0000 UTC	deployed	repositories-1	           
 
 Release "bucketrepo" has been upgraded. Happy Helming!
 NAME: bucketrepo
-LAST DEPLOYED: Thu Mar 12 15:03:57 2020
+LAST DEPLOYED: Tue Mar 17 13:30:42 2020
+Listing releases matching ^bucketrepo$
 NAMESPACE: **
 STATUS: deployed
-REVISION: 5
+REVISION: 7
 TEST SUITE: None
 NOTES:
 Get the application URL by running these commands:
 
 kubectl get ingress bucketrepo-bucketrepo
 
-Listing releases matching ^bucketrepo$
-bucketrepo	**       	5       	2020-03-12 15:03:57.492722171 +0000 UTC	deployed	bucketrepo-0.1.35	0.1.35     
-
-Release "tekton" has been upgraded. Happy Helming!
-NAME: tekton
-LAST DEPLOYED: Thu Mar 12 15:03:57 2020
-NAMESPACE: **
-STATUS: deployed
-REVISION: 5
-TEST SUITE: None
-NOTES:
-Tekton Pipelines
-
-Listing releases matching ^tekton$
-tekton	**       	5       	2020-03-12 15:03:57.236312031 +0000 UTC	deployed	tekton-0.0.48	           
+bucketrepo	**       	7       	2020-03-17 13:30:42.994430024 +0000 UTC	deployed	bucketrepo-0.1.35	0.1.35     
 
 Release "lighthouse" has been upgraded. Happy Helming!
 NAME: lighthouse
-LAST DEPLOYED: Thu Mar 12 15:03:58 2020
+LAST DEPLOYED: Tue Mar 17 13:30:43 2020
 NAMESPACE: **
 STATUS: deployed
-REVISION: 5
+REVISION: 7
 TEST SUITE: None
-Listing releases matching ^lighthouse$
 NOTES:
 Get the application URL by running these commands:
 
 kubectl get ingress lighthouse-lighthouse
 
-lighthouse	**       	5       	2020-03-12 15:03:58.05220927 +0000 UTC	deployed	lighthouse-0.0.485	0.0.485    
+Listing releases matching ^lighthouse$
+Release "**ui" has been upgraded. Happy Helming!
+NAME: **ui
+LAST DEPLOYED: Tue Mar 17 13:30:43 2020
+NAMESPACE: **
+STATUS: deployed
+REVISION: 4
+TEST SUITE: None
+NOTES:
+1. Get the application URL by running these commands:
+  export POD_NAME=$(kubectl get pods --namespace ** -l "app=**ui,release=**ui" -o jsonpath="{.items[0].metadata.name}")
+  echo "Visit http://127.0.0.1:8080 to use your application"
+  kubectl port-forward $POD_NAME 8080:80
+
+Listing releases matching ^**ui$
+Release "tekton" has been upgraded. Happy Helming!
+NAME: tekton
+LAST DEPLOYED: Tue Mar 17 13:30:43 2020
+NAMESPACE: **
+STATUS: deployed
+REVISION: 7
+TEST SUITE: None
+NOTES:
+Tekton Pipelines
+
+Listing releases matching ^tekton$
+lighthouse	**       	7       	2020-03-17 13:30:43.655662842 +0000 UTC	deployed	lighthouse-0.0.485	0.0.485    
+
+**ui	**       	4       	2020-03-17 13:30:43.817698904 +0000 UTC	deployed	**ui-0.0.1144	0.0.1144   
+
+tekton	**       	7       	2020-03-17 13:30:43.37585386 +0000 UTC	deployed	tekton-0.0.48	           
 
 Release "**boot-helmfile-resources" has been upgraded. Happy Helming!
 NAME: **boot-helmfile-resources
-LAST DEPLOYED: Thu Mar 12 15:03:58 2020
+LAST DEPLOYED: Tue Mar 17 13:30:43 2020
 NAMESPACE: **
 STATUS: deployed
-REVISION: 5
+REVISION: 7
 TEST SUITE: None
 
 Listing releases matching ^**boot-helmfile-resources$
-**boot-helmfile-resources	**       	6       	2020-03-12 15:04:03.015138744 +0000 UTC	pending-upgrade	**boot-helmfile-resources-0.0.89	           
-
-Listing releases matching ^chartmuseum$
-Release "chartmuseum" does not exist. Installing it now.
-NAME: chartmuseum
-LAST DEPLOYED: Thu Mar 12 15:04:00 2020
-NAMESPACE: **
-STATUS: deployed
-REVISION: 1
-TEST SUITE: None
-NOTES:
-** Please be patient while the chart is being deployed **
-
-Get the ChartMuseum URL by running:
-
-  export POD_NAME=$(kubectl get pods --namespace ** -l "app=chartmuseum" -l "release=chartmuseum" -o jsonpath="{.items[0].metadata.name}")
-  echo http://127.0.0.1:8080/
-  kubectl port-forward $POD_NAME 8080:8080 --namespace **
-
-chartmuseum	**       	1       	2020-03-12 15:04:00.065784111 +0000 UTC	deployed	chartmuseum-1.1.7	0.7.1      
+**boot-helmfile-resources	**       	7       	2020-03-17 13:30:43.364357205 +0000 UTC	deployed	**boot-helmfile-resources-0.0.89	           
 
 
 UPDATED RELEASES:
-NAME                        CHART                                 VERSION
-repositories                ../repositories                             1
-bucketrepo                  jenkins-x/bucketrepo                   0.1.35
-tekton                      jenkins-x/tekton                       0.0.48
-lighthouse                  jenkins-x/lighthouse                  0.0.485
-**boot-helmfile-resources   jenkins-x/**boot-helmfile-resources    0.0.89
-chartmuseum                 jenkins-x/chartmuseum                   1.1.7
+NAME                        CHART                                  VERSION
+repositories                ../repositories                              1
+bucketrepo                  jenkins-x/bucketrepo                    0.1.35
+lighthouse                  jenkins-x/lighthouse                   0.0.485
+**ui                        jenkins-x/**ui                        0.0.1144
+tekton                      jenkins-x/tekton                        0.0.48
+**boot-helmfile-resources   jenkins-x/**boot-helmfile-resources     0.0.89
 
 
-Showing logs for build [32mjstrachan-environment-bucketrep-bwb8x-3[0m stage [32mrelease[0m and container [32mstep-git-creds[0m
-Generated Git credentials file /builder/home/git/credentials
-
-Showing logs for build [32mjstrachan-environment-bucketrep-bwb8x-3[0m stage [32mrelease[0m and container [32mstep-verify-jenkins-x-environment[0m
-Storing the requirements in team settings in the dev environment
-Validating git repository for dev environment at URL https://github.com/*********/environment-bucketrepo-dev.git
-Validating git repository for production environment at URL https://github.com/*********/environment-bucketrepo-production.git
-Using Git provider github at https://github.com
-? Using Git user name: *********
-? Using organisation: *********
-Creating repository *********/environment-bucketrepo-production
-Git repository *********/environment-bucketrepo-production already exists
-WARNING: WARNING: Could not find a Makefile in /tmp/**-env-repo-124235492/*********/environment-bucketrepo-production
-Pushed Git repository to https://github.com/*********/environment-bucketrepo-production
-
-Validating git repository for staging environment at URL https://github.com/*********/environment-bucketrepo-staging.git
-Using Git provider github at https://github.com
-? Using Git user name: *********
-? Using organisation: *********
-Creating repository *********/environment-bucketrepo-staging
-Git repository *********/environment-bucketrepo-staging already exists
-WARNING: WARNING: Could not find a Makefile in /tmp/**-env-repo-845358323/*********/environment-bucketrepo-staging
-Pushed Git repository to https://github.com/*********/environment-bucketrepo-staging
-
-Environment git repositories look good
-
-
-Showing logs for build [32mjstrachan-environment-bucketrep-bwb8x-3[0m stage [32mrelease[0m and container [32mstep-install-pipelines[0m
-
-Showing logs for build [32mjstrachan-environment-bucketrep-bwb8x-3[0m stage [32mrelease[0m and container [32mstep-update-webhooks[0m
-DEBUG: Finding service url for hook in namespace **
-DEBUG: Couldn't find service url, attempting to look up via ingress
-DEBUG: found service url http://hook-**.35.233.11.180.nip.io
-Updating webhooks for Owner: ********* and Repository: environment-bucketrepo-dev in git server: https://github.com
-Checking hooks for repository *********/environment-bucketrepo-dev with user *********
-Found matching hook for url http://hook-**.35.233.11.180.nip.io/hook
-Updating GitHub webhook for *********/environment-bucketrepo-dev for url http://hook-**.35.233.11.180.nip.io/hook
-Updating webhooks for Owner: ********* and Repository: environment-bucketrepo-production in git server: https://github.com
-Checking hooks for repository *********/environment-bucketrepo-production with user *********
-Found matching hook for url http://hook-**.35.233.11.180.nip.io/hook
-Updating GitHub webhook for *********/environment-bucketrepo-production for url http://hook-**.35.233.11.180.nip.io/hook
-Updating webhooks for Owner: ********* and Repository: environment-bucketrepo-staging in git server: https://github.com
-Checking hooks for repository *********/environment-bucketrepo-staging with user *********
-Found matching hook for url http://hook-**.35.233.11.180.nip.io/hook
-Updating GitHub webhook for *********/environment-bucketrepo-staging for url http://hook-**.35.233.11.180.nip.io/hook
-Updating webhooks for Owner: ********* and Repository: nodey431 in git server: https://github.com
-Checking hooks for repository *********/nodey431 with user *********
-Found matching hook for url http://hook-**.35.233.11.180.nip.io/hook
-Updating GitHub webhook for *********/nodey431 for url http://hook-**.35.233.11.180.nip.io/hook
-
-Showing logs for build [32mjstrachan-environment-bucketrep-bwb8x-3[0m stage [32mrelease[0m and container [32mstep-verify-installation[0m
-verifying the Jenkins X installation in namespace **
-verifying pods
-Checking pod statuses
-POD                                                        STATUS
-bucketrepo-bucketrepo-6c9567bd96-tdlww                     Running
-jenkins-x-chartmuseum-7844b7b6cb-mrqnx                     Running
-**-boot-c4v6m                                              Running
-**-boot-w7n96                                              Failed
-**boot-helmfile-resources-controllerbuild-65d8958d66-4b9s4 Running
-**boot-helmfile-resources-controllerrole-7d85d784c5-rl5ww  Running
-**boot-helmfile-resources-gcactivities-1584025200-s77n4    Succeeded
-**boot-helmfile-resources-gcpods-1584025200-2ggqw          Succeeded
-**boot-helmfile-resources-gcpreviews-1584025200-q6cwg      Succeeded
-lighthouse-lighthouse-5cdbcc4c58-dqbng                     Running
-lighthouse-lighthouse-5cdbcc4c58-s89dn                     Running
-tekton-pipelines-controller-666488cbd5-qkkc2               Running
-tide-5477488bf9-pg8jv                                      Running
-Verifying the git config
-Verifying username ********* at git server github at https://github.com
-Found 21 organisations in git server https://github.com: CamelCookbook, FuseByExample, arcalos-dashboard, arcalos-environments, cb-kubecd, cloudbees, codeship, fabric8-updatebot, fusesource, jenkins-x, jenkins-x-apps, jenkins-x-buildpacks, jenkins-x-charts, jenkins-x-dashboard, jenkins-x-images, jenkins-x-labs, jenkins-x-quickstarts, jenkins-x-test-projects, jenkinsci, jenkinsx, petclinic-gcp
-Validated pipeline user ********* on git server https://github.com
-Git tokens seem to be setup correctly
-Installation is currently looking: GOOD
+FAILED RELEASES:
+NAME
+istio
+in ./helmfile.yaml: failed processing release istio: helm exited with status 1:
+  Error: failed to download "**-labs/istio" (hint: running `helm repo update` may help)
+[31m
+Pipeline failed on stage 'release' : container 'step-helmfile-apps'. The execution of the pipeline has stopped.[0m
