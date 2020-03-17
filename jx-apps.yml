@@ -1,5 +1,4 @@
 apps:
-- name: stable/nginx-ingress
 - name: stable/kuberhealthy
 - name: jx-labs/istio
 - name: flagger/flagger

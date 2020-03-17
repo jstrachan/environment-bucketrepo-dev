@@ -51,7 +51,7 @@ environments:
 gitops: true
 helmfile: true
 ingress:
-  domain: 34.76.118.232.nip.io
+  domain: 34.77.80.35.nip.io
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
