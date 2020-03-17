@@ -4,14 +4,14 @@ autoUpdate:
 bootConfigURL: https://github.com/jenkins-x/jenkins-x-boot-helmfile-config
 cluster:
   chartRepository: http://bucketrepo/bucketrepo/charts/
-  clusterName: bucketrepo6
+  clusterName: bucketrepo7
   devEnvApprovers:
   - jstrachan
   environmentGitOwner: jstrachan
   gitKind: github
   gitName: github
   gitServer: https://github.com
-  kanikoSAName: bucketrepo6-ko
+  kanikoSAName: bucketrepo7-ko
   namespace: jx
   project: jstrachan-multicluster
   provider: gke
@@ -80,6 +80,6 @@ velero:
   schedule: ""
   ttl: ""
 versionStream:
-  ref: v2.0.33
+  ref: master
   url: https://github.com/jenkins-x-labs/jenkins-x-versions.git
 webhook: lighthouse
