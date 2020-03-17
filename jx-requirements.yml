@@ -4,14 +4,14 @@ autoUpdate:
 bootConfigURL: https://github.com/jenkins-x/jenkins-x-boot-helmfile-config
 cluster:
   chartRepository: http://bucketrepo/bucketrepo/charts/
-  clusterName: bucketrepo5
+  clusterName: bucketrepo6
   devEnvApprovers:
   - jstrachan
   environmentGitOwner: jstrachan
   gitKind: github
   gitName: github
   gitServer: https://github.com
-  kanikoSAName: bucketrepo3-ko
+  kanikoSAName: bucketrepo6-ko
   namespace: jx
   project: jstrachan-multicluster
   provider: gke
