@@ -4,14 +4,14 @@ autoUpdate:
 bootConfigURL: https://github.com/jenkins-x/jenkins-x-boot-helmfile-config
 cluster:
   chartRepository: http://bucketrepo/bucketrepo/charts/
-  clusterName: bucketrepo8
+  clusterName: bucketrepo9
   devEnvApprovers:
   - jstrachan
   environmentGitOwner: jstrachan
   gitKind: github
   gitName: github
   gitServer: https://github.com
-  kanikoSAName: bucketrepo8-ko
+  kanikoSAName: bucketrepo9-ko
   namespace: jx
   project: jstrachan-multicluster
   provider: gke
@@ -51,9 +51,10 @@ environments:
 gitops: true
 helmfile: true
 ingress:
-  domain: 34.77.80.35.nip.io
+  domain: ""
   externalDNS: false
   namespaceSubDomain: -jx.
+  kind: "istio"
   tls:
     email: ""
     enabled: false
@@ -80,6 +81,6 @@ velero:
   schedule: ""
   ttl: ""
 versionStream:
-  ref: v2.0.35
+  ref: master
   url: https://github.com/jenkins-x-labs/jenkins-x-versions.git
 webhook: lighthouse
