@@ -5,3 +5,9 @@ dependencies:
   url: https://github.com/jstrachan/nodey434.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jstrachan
+  repo: godemo30
+  url: https://github.com/jstrachan/godemo30.git
+  version: ""
+  versionURL: ""
