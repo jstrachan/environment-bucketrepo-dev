@@ -53,6 +53,7 @@ helmfile: true
 ingress:
   domain: 34.76.61.93.nip.io
   externalDNS: false
+  kind: istio
   namespaceSubDomain: -jx.
   tls:
     email: ""
@@ -80,6 +81,6 @@ velero:
   schedule: ""
   ttl: ""
 versionStream:
-  ref: v2.0.41
+  ref: master
   url: https://github.com/jenkins-x-labs/jenkins-x-versions.git
 webhook: lighthouse
