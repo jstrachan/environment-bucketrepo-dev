@@ -54,7 +54,7 @@ helmfile: true
 ingress:
   domain: 34.76.61.93.nip.io
   externalDNS: false
-  kind: istio
+  # kind: istio
   namespaceSubDomain: -jx.
   tls:
     email: ""
