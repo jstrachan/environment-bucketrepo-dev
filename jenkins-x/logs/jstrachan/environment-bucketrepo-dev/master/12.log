@@ -1,27 +1,29 @@
 
-Showing logs for build [32mjstrachan-environment-bucketrep-ghgx6-12[0m stage [32mrelease[0m and container [32mstep-credential-initializer-ldnfr[0m
-{"level":"warn","ts":1584465604.958383,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1584465604.9588232,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mjstrachan-environment-bucketrep-gqbvd-12[0m stage [32mrelease[0m and container [32mstep-credential-initializer-lsf7k[0m
+{"level":"warn","ts":1584645252.4376082,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584645252.4380293,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mjstrachan-environment-bucketrep-ghgx6-12[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-w8c9x[0m
-{"level":"warn","ts":1584465606.1526692,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1584465606.1557455,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mjstrachan-environment-bucketrep-gqbvd-12[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-m5qz4[0m
+{"level":"warn","ts":1584645252.8944852,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1584645252.8956423,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mjstrachan-environment-bucketrep-ghgx6-12[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-gqbvd-12[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mjstrachan-environment-bucketrep-ghgx6-12[0m stage [32mrelease[0m and container [32mstep-git-source-jstrachan-environment-bucketrep-ghgx6-c867l[0m
-{"level":"warn","ts":1584465616.3946989,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1584465617.5047843,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/environment-bucketrepo-dev.git @ v0.0.30 in path /workspace/source"}
+Showing logs for build [32mjstrachan-environment-bucketrep-gqbvd-12[0m stage [32mrelease[0m and container [32mstep-git-source-jstrachan-environment-bucketrep-gqbvd-62m75[0m
+{"level":"warn","ts":1584645260.929213,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584645262.0287654,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/environment-bucketrepo-dev.git @ v0.0.47 in path /workspace/source"}
 
-Showing logs for build [32mjstrachan-environment-bucketrep-ghgx6-12[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:0b08b73c2bb2ddcfe3e54d16c624ddd765584097
+Showing logs for build [32mjstrachan-environment-bucketrep-gqbvd-12[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:0903b2f726955fa7fd6f2f4d04eef1fdcadb723a
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mjstrachan-environment-bucketrep-ghgx6-12[0m stage [32mrelease[0m and container [32mstep-validate-git[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-gqbvd-12[0m stage [32mrelease[0m and container [32mstep-validate-git[0m
 Git configured for user: jenkins-x-bot and email jenkins-x@googlegroups.com
 
-Showing logs for build [32mjstrachan-environment-bucketrep-ghgx6-12[0m stage [32mrelease[0m and container [32mstep-verify-preinstall[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-gqbvd-12[0m stage [32mrelease[0m and container [32mstep-verify-preinstall[0m
 no need to reconnect to cluster
+Cloning the Jenkins X versions repo https://github.com/jenkins-x-labs/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+Locking version stream https://github.com/jenkins-x-labs/jenkins-x-versions.git to release v2.0.47. Jenkins X will use this release rather than master to resolve all versions from now on.
 writing the following to the OWNERS file for the development environment repository:
 approvers:
 - *********
@@ -31,6 +33,7 @@ WARNING: TLS is not enabled so your webhooks will be called using HTTP. This mea
 Verifying the kubernetes cluster before we try to boot Jenkins X in namespace: **
 WARNING: Lazy create of cloud resources is disabled
 Verifying Ingress...
+Clearing the domain 34.76.61.93.nip.io as when using auto-DNS domains we need to regenerate to ensure its always accurate in case the cluster or ingress service is recreated
 
 Using namespace '**' from context named '' on server ''.
 
@@ -48,15 +51,12 @@ verified there is a ConfigMap plugins in namespace **
 Cluster looks good, you are ready to '** boot' now!
 
 
-Showing logs for build [32mjstrachan-environment-bucketrep-ghgx6-12[0m stage [32mrelease[0m and container [32mstep-install-jx-crds[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-gqbvd-12[0m stage [32mrelease[0m and container [32mstep-install-jx-crds[0m
 Jenkins X CRDs upgraded with success
 
-Showing logs for build [32mjstrachan-environment-bucketrep-ghgx6-12[0m stage [32mrelease[0m and container [32mstep-generate-helmfile[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-gqbvd-12[0m stage [32mrelease[0m and container [32mstep-generate-helmfile[0m
 
-Showing logs for build [32mjstrachan-environment-bucketrep-ghgx6-12[0m stage [32mrelease[0m and container [32mstep-kubectl-apply[0m
-this script allows you to kubectl apply resources or CRDs
-
-Showing logs for build [32mjstrachan-environment-bucketrep-ghgx6-12[0m stage [32mrelease[0m and container [32mstep-helmfile-system[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-gqbvd-12[0m stage [32mrelease[0m and container [32mstep-helmfile-system[0m
 Adding repo flagger https://flagger.app
 "flagger" has been added to your repositories
 
@@ -81,123 +81,34 @@ hook[prepare] logs | customresourcedefinition.apiextensions.k8s.io/alertprovider
 hook[prepare] logs | 
 Affected releases are:
   flagger (flagger/flagger) UPDATED
+  flagger-metrics (**-labs/flagger-metrics) UPDATED
   grafana (flagger/grafana) UPDATED
   istio (**-labs/istio) UPDATED
   kuberhealthy (stable/kuberhealthy) UPDATED
-  nginx-ingress (stable/nginx-ingress) UPDATED
 
-Upgrading release=nginx-ingress, chart=stable/nginx-ingress
-Upgrading release=kuberhealthy, chart=stable/kuberhealthy
-Upgrading release=flagger, chart=flagger/flagger
 Upgrading release=istio, chart=**-labs/istio
+Upgrading release=flagger, chart=flagger/flagger
 Upgrading release=grafana, chart=flagger/grafana
-Release "flagger" has been upgraded. Happy Helming!
-NAME: flagger
-LAST DEPLOYED: Tue Mar 17 17:20:46 2020
-NAMESPACE: istio-system
-STATUS: deployed
-REVISION: 15
-TEST SUITE: None
-NOTES:
-Flagger installed
-
-Listing releases matching ^flagger$
-flagger	istio-system	15      	2020-03-17 17:20:46.461976971 +0000 UTC	deployed	flagger-0.24.0	1.0.0-rc.1 
-
-Release "grafana" has been upgraded. Happy Helming!
-NAME: grafana
-LAST DEPLOYED: Tue Mar 17 17:20:46 2020
-NAMESPACE: istio-system
-STATUS: deployed
-REVISION: 15
-TEST SUITE: None
-NOTES:
-1. Run the port forward command:
-
-kubectl -n istio-system port-forward svc/grafana 3000:80
-
-2. Navigate to:
-
-http://localhost:3000
-
-Listing releases matching ^grafana$
-grafana	istio-system	15      	2020-03-17 17:20:46.773675555 +0000 UTC	deployed	grafana-1.4.0	6.5.1      
-
-Release "kuberhealthy" has been upgraded. Happy Helming!
-NAME: kuberhealthy
-LAST DEPLOYED: Tue Mar 17 17:20:48 2020
-NAMESPACE: istio-system
-STATUS: deployed
-REVISION: 15
-TEST SUITE: None
-
-Listing releases matching ^kuberhealthy$
-Release "nginx-ingress" has been upgraded. Happy Helming!
-NAME: nginx-ingress
-LAST DEPLOYED: Tue Mar 17 17:20:48 2020
-NAMESPACE: nginx
-STATUS: deployed
-REVISION: 15
-TEST SUITE: None
-NOTES:
-The nginx-ingress controller has been installed.
-It may take a few minutes for the LoadBalancer IP to be available.
-You can watch the status by running 'kubectl --namespace nginx get services -o wide -w nginx-ingress-controller'
-
-An example Ingress that makes use of the controller:
-
-  apiVersion: extensions/v1beta1
-  kind: Ingress
-  metadata:
-    annotations:
-      kubernetes.io/ingress.class: nginx
-    name: example
-    namespace: foo
-  spec:
-    rules:
-      - host: www.example.com
-        http:
-          paths:
-            - backend:
-                serviceName: exampleService
-                servicePort: 80
-              path: /
-    # This section is only required if TLS is to be enabled for the Ingress
-    tls:
-        - hosts:
-            - www.example.com
-          secretName: example-tls
-
-If TLS is enabled for the Ingress, a Secret containing the certificate and key must also be provided:
-
-  apiVersion: v1
-  kind: Secret
-  metadata:
-    name: example-tls
-    namespace: foo
-  data:
-    tls.crt: <base64 encoded cert>
-    tls.key: <base64 encoded key>
-  type: kubernetes.io/tls
-
-Listing releases matching ^nginx-ingress$
-kuberhealthy	istio-system	15      	2020-03-17 17:20:48.924828377 +0000 UTC	deployed	kuberhealthy-1.2.6	v1.0.2     
-
-nginx-ingress	nginx    	15      	2020-03-17 17:20:48.936142878 +0000 UTC	deployed	nginx-ingress-1.33.5	0.30.0     
-
-
-UPDATED RELEASES:
-NAME            CHART                  VERSION
-flagger         flagger/flagger         0.24.0
-grafana         flagger/grafana          1.4.0
-kuberhealthy    stable/kuberhealthy      1.2.6
-nginx-ingress   stable/nginx-ingress    1.33.5
-
+Upgrading release=flagger-metrics, chart=**-labs/flagger-metrics
+Upgrading release=kuberhealthy, chart=stable/kuberhealthy
 
 FAILED RELEASES:
 NAME
 istio
-in ./helmfile.yaml: failed processing release istio: helm exited with status 1:
-  Error: UPGRADE FAILED: release istio failed, and has been rolled back due to atomic being set: cannot patch "istio-boot" with kind Job: Job.batch "istio-boot" is invalid: spec.template: Invalid value: core.PodTemplateSpec{ObjectMeta:v1.ObjectMeta{Name:"", GenerateName:"", Namespace:"", SelfLink:"", UID:"", ResourceVersion:"", Generation:0, CreationTimestamp:v1.Time{Time:time.Time{wall:0x0, ext:0, loc:(*time.Location)(nil)}}, DeletionTimestamp:(*v1.Time)(nil), DeletionGracePeriodSeconds:(*int64)(nil), Labels:map[string]string{"controller-uid":"e81c399d-6871-11ea-9eee-42010af00216", "job-name":"istio-boot", "release":"jenkins-x"}, Annotations:map[string]string(nil), OwnerReferences:[]v1.OwnerReference(nil), Initializers:(*v1.Initializers)(nil), Finalizers:[]string(nil), ClusterName:"", ManagedFields:[]v1.ManagedFieldsEntry(nil)}, Spec:core.PodSpec{Volumes:[]core.Volume(nil), InitContainers:[]core.Container(nil), Containers:[]core.Container{core.Container{Name:"job", Image:"gcr.io/jenkinsxio-labs/istio:0.0.20", Command:[]string{"istioctl"}, Args:[]string{"manifest", "apply", "--set", "profile=default"}, WorkingDir:"", Ports:[]core.ContainerPort(nil), EnvFrom:[]core.EnvFromSource(nil), Env:[]core.EnvVar(nil), Resources:core.ResourceRequirements{Limits:core.ResourceList(nil), Requests:core.ResourceList(nil)}, VolumeMounts:[]core.VolumeMount(nil), VolumeDevices:[]core.VolumeDevice(nil), LivenessProbe:(*core.Probe)(nil), ReadinessProbe:(*core.Probe)(nil), Lifecycle:(*core.Lifecycle)(nil), TerminationMessagePath:"/dev/termination-log", TerminationMessagePolicy:"File", ImagePullPolicy:"IfNotPresent", SecurityContext:(*core.SecurityContext)(nil), Stdin:false, StdinOnce:false, TTY:false}}, RestartPolicy:"Never", TerminationGracePeriodSeconds:(*int64)(0xc014ffa7e0), ActiveDeadlineSeconds:(*int64)(nil), DNSPolicy:"ClusterFirst", NodeSelector:map[string]string(nil), ServiceAccountName:"istio-boot", AutomountServiceAccountToken:(*bool)(nil), NodeName:"", SecurityContext:(*core.PodSecurityContext)(0xc010259a40), ImagePullSecrets:[]core.LocalObjectReference(nil), Hostname:"", Subdomain:"", Affinity:(*core.Affinity)(nil), SchedulerName:"default-scheduler", Tolerations:[]core.Toleration(nil), HostAliases:[]core.HostAlias(nil), PriorityClassName:"", Priority:(*int32)(nil), DNSConfig:(*core.PodDNSConfig)(nil), ReadinessGates:[]core.PodReadinessGate(nil), RuntimeClassName:(*string)(nil), EnableServiceLinks:(*bool)(nil)}}: field is immutable
+flagger-metrics
+flagger
+grafana
+kuberhealthy
+in ./helmfile.yaml: 5 errors:
+err 0: failed processing release istio: helm exited with status 1:
+  Error: UPGRADE FAILED: release: already exists
+err 1: failed processing release flagger-metrics: helm exited with status 1:
+  Error: UPGRADE FAILED: release: already exists
+err 2: failed processing release flagger: helm exited with status 1:
+  Error: UPGRADE FAILED: release: already exists
+err 3: failed processing release grafana: helm exited with status 1:
+  Error: UPGRADE FAILED: release: already exists
+err 4: failed processing release kuberhealthy: helm exited with status 1:
+  Error: UPGRADE FAILED: release: already exists
 [31m
 Pipeline failed on stage 'release' : container 'step-helmfile-system'. The execution of the pipeline has stopped.[0m
