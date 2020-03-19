@@ -1,26 +1,26 @@
 
-Showing logs for build [32mjstrachan-environment-bucketrep-2bj2q-16[0m stage [32mrelease[0m and container [32mstep-credential-initializer-rmt56[0m
-{"level":"warn","ts":1584476003.1366487,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1584476003.1373074,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mjstrachan-environment-bucketrep-kqg5d-16[0m stage [32mrelease[0m and container [32mstep-credential-initializer-s22mf[0m
+{"level":"warn","ts":1584645871.8153691,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584645871.8160899,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mjstrachan-environment-bucketrep-2bj2q-16[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-z4d57[0m
-{"level":"warn","ts":1584476004.253379,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1584476004.2544382,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mjstrachan-environment-bucketrep-kqg5d-16[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-9nlxn[0m
+{"level":"warn","ts":1584645872.820625,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1584645872.8217607,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mjstrachan-environment-bucketrep-2bj2q-16[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-kqg5d-16[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mjstrachan-environment-bucketrep-2bj2q-16[0m stage [32mrelease[0m and container [32mstep-git-source-jstrachan-environment-bucketrep-2bj2q-fwllm[0m
-{"level":"warn","ts":1584476012.6184356,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1584476013.7178988,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/environment-bucketrepo-dev.git @ v0.0.34 in path /workspace/source"}
+Showing logs for build [32mjstrachan-environment-bucketrep-kqg5d-16[0m stage [32mrelease[0m and container [32mstep-git-source-jstrachan-environment-bucketrep-kqg5d-j9xt9[0m
+{"level":"warn","ts":1584645880.9274518,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584645881.9910345,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/environment-bucketrepo-dev.git @ v0.0.51 in path /workspace/source"}
 
-Showing logs for build [32mjstrachan-environment-bucketrep-2bj2q-16[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:16ef330787d58ec823188fce3ef2493836eda882
+Showing logs for build [32mjstrachan-environment-bucketrep-kqg5d-16[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:910013f49c624a9eb650954fb520aabbe74252d8
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mjstrachan-environment-bucketrep-2bj2q-16[0m stage [32mrelease[0m and container [32mstep-validate-git[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-kqg5d-16[0m stage [32mrelease[0m and container [32mstep-validate-git[0m
 Git configured for user: jenkins-x-bot and email jenkins-x@googlegroups.com
 
-Showing logs for build [32mjstrachan-environment-bucketrep-2bj2q-16[0m stage [32mrelease[0m and container [32mstep-verify-preinstall[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-kqg5d-16[0m stage [32mrelease[0m and container [32mstep-verify-preinstall[0m
 no need to reconnect to cluster
 writing the following to the OWNERS file for the development environment repository:
 approvers:
@@ -31,7 +31,7 @@ WARNING: TLS is not enabled so your webhooks will be called using HTTP. This mea
 Verifying the kubernetes cluster before we try to boot Jenkins X in namespace: **
 WARNING: Lazy create of cloud resources is disabled
 Verifying Ingress...
-Clearing the domain 34.77.80.35.nip.io as when using auto-DNS domains we need to regenerate to ensure its always accurate in case the cluster or ingress service is recreated
+Clearing the domain 34.76.61.93.nip.io as when using auto-DNS domains we need to regenerate to ensure its always accurate in case the cluster or ingress service is recreated
 
 Using namespace '**' from context named '' on server ''.
 
@@ -49,12 +49,12 @@ verified there is a ConfigMap plugins in namespace **
 Cluster looks good, you are ready to '** boot' now!
 
 
-Showing logs for build [32mjstrachan-environment-bucketrep-2bj2q-16[0m stage [32mrelease[0m and container [32mstep-install-jx-crds[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-kqg5d-16[0m stage [32mrelease[0m and container [32mstep-install-jx-crds[0m
 Jenkins X CRDs upgraded with success
 
-Showing logs for build [32mjstrachan-environment-bucketrep-2bj2q-16[0m stage [32mrelease[0m and container [32mstep-generate-helmfile[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-kqg5d-16[0m stage [32mrelease[0m and container [32mstep-generate-helmfile[0m
 
-Showing logs for build [32mjstrachan-environment-bucketrep-2bj2q-16[0m stage [32mrelease[0m and container [32mstep-helmfile-system[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-kqg5d-16[0m stage [32mrelease[0m and container [32mstep-helmfile-system[0m
 Adding repo flagger https://flagger.app
 "flagger" has been added to your repositories
 
@@ -79,69 +79,49 @@ hook[prepare] logs | customresourcedefinition.apiextensions.k8s.io/alertprovider
 hook[prepare] logs | 
 Affected releases are:
   flagger (flagger/flagger) UPDATED
+  flagger-metrics (**-labs/flagger-metrics) UPDATED
   grafana (flagger/grafana) UPDATED
   istio (**-labs/istio) UPDATED
   kuberhealthy (stable/kuberhealthy) UPDATED
 
-Upgrading release=flagger, chart=flagger/flagger
+Upgrading release=istio, chart=**-labs/istio
 Upgrading release=grafana, chart=flagger/grafana
 Upgrading release=kuberhealthy, chart=stable/kuberhealthy
-Upgrading release=istio, chart=**-labs/istio
-Release "grafana" has been upgraded. Happy Helming!
-NAME: grafana
-LAST DEPLOYED: Tue Mar 17 20:14:00 2020
-NAMESPACE: istio-system
-STATUS: deployed
-REVISION: 19
-TEST SUITE: None
-NOTES:
-1. Run the port forward command:
-
-kubectl -n istio-system port-forward svc/grafana 3000:80
-
-2. Navigate to:
-
-http://localhost:3000
-
-Listing releases matching ^grafana$
+Upgrading release=flagger, chart=flagger/flagger
+Upgrading release=flagger-metrics, chart=**-labs/flagger-metrics
 Release "flagger" has been upgraded. Happy Helming!
 NAME: flagger
-LAST DEPLOYED: Tue Mar 17 20:14:00 2020
+LAST DEPLOYED: Thu Mar 19 19:25:12 2020
 NAMESPACE: istio-system
 STATUS: deployed
-REVISION: 19
+REVISION: 27
 TEST SUITE: None
 NOTES:
 Flagger installed
 
 Listing releases matching ^flagger$
-grafana	istio-system	19      	2020-03-17 20:14:00.3839248 +0000 UTC	deployed	grafana-1.4.0	6.5.1      
-
-flagger	istio-system	19      	2020-03-17 20:14:00.254817396 +0000 UTC	deployed	flagger-0.24.0	1.0.0-rc.1 
-
-Listing releases matching ^kuberhealthy$
-Release "kuberhealthy" has been upgraded. Happy Helming!
-NAME: kuberhealthy
-LAST DEPLOYED: Tue Mar 17 20:14:03 2020
-NAMESPACE: istio-system
-STATUS: deployed
-REVISION: 19
-TEST SUITE: None
-
-kuberhealthy	istio-system	19      	2020-03-17 20:14:03.603799558 +0000 UTC	deployed	kuberhealthy-1.2.6	v1.0.2     
+flagger	istio-system	27      	2020-03-19 19:25:12.429932069 +0000 UTC	deployed	flagger-0.24.0	1.0.0-rc.1 
 
 
 UPDATED RELEASES:
-NAME           CHART                 VERSION
-grafana        flagger/grafana         1.4.0
-flagger        flagger/flagger        0.24.0
-kuberhealthy   stable/kuberhealthy     1.2.6
+NAME      CHART             VERSION
+flagger   flagger/flagger    0.24.0
 
 
 FAILED RELEASES:
 NAME
+flagger-metrics
 istio
-in ./helmfile.yaml: failed processing release istio: helm exited with status 1:
-  Error: UPGRADE FAILED: release istio failed, and has been rolled back due to atomic being set: cannot patch "istio-boot" with kind Job: Job.batch "istio-boot" is invalid: spec.template: Invalid value: core.PodTemplateSpec{ObjectMeta:v1.ObjectMeta{Name:"", GenerateName:"", Namespace:"", SelfLink:"", UID:"", ResourceVersion:"", Generation:0, CreationTimestamp:v1.Time{Time:time.Time{wall:0x0, ext:0, loc:(*time.Location)(nil)}}, DeletionTimestamp:(*v1.Time)(nil), DeletionGracePeriodSeconds:(*int64)(nil), Labels:map[string]string{"controller-uid":"e81c399d-6871-11ea-9eee-42010af00216", "job-name":"istio-boot", "release":"jenkins-x"}, Annotations:map[string]string(nil), OwnerReferences:[]v1.OwnerReference(nil), Initializers:(*v1.Initializers)(nil), Finalizers:[]string(nil), ClusterName:"", ManagedFields:[]v1.ManagedFieldsEntry(nil)}, Spec:core.PodSpec{Volumes:[]core.Volume(nil), InitContainers:[]core.Container(nil), Containers:[]core.Container{core.Container{Name:"job", Image:"gcr.io/jenkinsxio-labs/istio:0.0.20", Command:[]string{"istioctl"}, Args:[]string{"manifest", "apply", "--set", "profile=default"}, WorkingDir:"", Ports:[]core.ContainerPort(nil), EnvFrom:[]core.EnvFromSource(nil), Env:[]core.EnvVar(nil), Resources:core.ResourceRequirements{Limits:core.ResourceList(nil), Requests:core.ResourceList(nil)}, VolumeMounts:[]core.VolumeMount(nil), VolumeDevices:[]core.VolumeDevice(nil), LivenessProbe:(*core.Probe)(nil), ReadinessProbe:(*core.Probe)(nil), Lifecycle:(*core.Lifecycle)(nil), TerminationMessagePath:"/dev/termination-log", TerminationMessagePolicy:"File", ImagePullPolicy:"IfNotPresent", SecurityContext:(*core.SecurityContext)(nil), Stdin:false, StdinOnce:false, TTY:false}}, RestartPolicy:"Never", TerminationGracePeriodSeconds:(*int64)(0xc006676010), ActiveDeadlineSeconds:(*int64)(nil), DNSPolicy:"ClusterFirst", NodeSelector:map[string]string(nil), ServiceAccountName:"istio-boot", AutomountServiceAccountToken:(*bool)(nil), NodeName:"", SecurityContext:(*core.PodSecurityContext)(0xc0186795e0), ImagePullSecrets:[]core.LocalObjectReference(nil), Hostname:"", Subdomain:"", Affinity:(*core.Affinity)(nil), SchedulerName:"default-scheduler", Tolerations:[]core.Toleration(nil), HostAliases:[]core.HostAlias(nil), PriorityClassName:"", Priority:(*int32)(nil), DNSConfig:(*core.PodDNSConfig)(nil), ReadinessGates:[]core.PodReadinessGate(nil), RuntimeClassName:(*string)(nil), EnableServiceLinks:(*bool)(nil)}}: field is immutable
+grafana
+kuberhealthy
+in ./helmfile.yaml: 4 errors:
+err 0: failed processing release flagger-metrics: helm exited with status 1:
+  Error: UPGRADE FAILED: release: already exists
+err 1: failed processing release istio: helm exited with status 1:
+  Error: UPGRADE FAILED: release: already exists
+err 2: failed processing release grafana: helm exited with status 1:
+  Error: UPGRADE FAILED: release: already exists
+err 3: failed processing release kuberhealthy: helm exited with status 1:
+  Error: UPGRADE FAILED: release: already exists
 [31m
 Pipeline failed on stage 'release' : container 'step-helmfile-system'. The execution of the pipeline has stopped.[0m
