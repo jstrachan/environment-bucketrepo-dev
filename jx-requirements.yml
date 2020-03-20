@@ -19,7 +19,7 @@ cluster:
   zone: europe-west1-d
 environments:
 - ingress:
-    domain: 34.76.61.93.nip.io
+    domain: 35.240.16.53.nip.io
     externalDNS: false
     kind: istio
     namespaceSubDomain: -jx.
@@ -52,7 +52,7 @@ environments:
 gitops: true
 helmfile: true
 ingress:
-  domain: 34.76.61.93.nip.io
+  domain: 35.240.16.53.nip.io
   externalDNS: false
   kind: istio
   namespaceSubDomain: -jx.
@@ -82,6 +82,6 @@ velero:
   schedule: ""
   ttl: ""
 versionStream:
-  ref: master
+  ref: v2.0.47
   url: https://github.com/jenkins-x-labs/jenkins-x-versions.git
 webhook: lighthouse
