@@ -1,0 +1,131 @@
+
+Showing logs for build [32mjstrachan-environment-bucketrep-lsqgf-1[0m stage [32mpr-checks[0m and container [32mstep-credential-initializer-vkjmt[0m
+{"level":"warn","ts":1584702738.5887008,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584702738.589583,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjstrachan-environment-bucketrep-lsqgf-1[0m stage [32mpr-checks[0m and container [32mstep-working-dir-initializer-zgtfl[0m
+{"level":"warn","ts":1584702739.5932183,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1584702739.5943394,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjstrachan-environment-bucketrep-lsqgf-1[0m stage [32mpr-checks[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjstrachan-environment-bucketrep-lsqgf-1[0m stage [32mpr-checks[0m and container [32mstep-git-source-jstrachan-environment-bucketrep-lsqgf-5k5qv[0m
+{"level":"warn","ts":1584702745.8507974,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584702747.0333183,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/environment-bucketrepo-dev.git @ master in path /workspace/source"}
+
+Showing logs for build [32mjstrachan-environment-bucketrep-lsqgf-1[0m stage [32mpr-checks[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:4972732e2c3a2525fee3010b32a8a12e53ff98e4,3:fc344ff4da03dd5288c2366298941157bfea166c
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow fc344ff4da03dd5288c2366298941157bfea166c: 4972732e2c3a2525fee3010b32a8a12e53ff98e4:
+DEBUG: ran git fetch --unshallow origin fc344ff4da03dd5288c2366298941157bfea166c: 4972732e2c3a2525fee3010b32a8a12e53ff98e4: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard 4972732e2c3a2525fee3010b32a8a12e53ff98e4
+DEBUG: ran git reset --hard 4972732e2c3a2525fee3010b32a8a12e53ff98e4 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge fc344ff4da03dd5288c2366298941157bfea166c
+DEBUG: ran git merge fc344ff4da03dd5288c2366298941157bfea166c in 
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e 4972732e2c3a2525fee3010b32a8a12e53ff98e4..HEAD
+Merged SHA fc344ff4da03dd5288c2366298941157bfea166c with commit message 'chore(deps): bump https://github.com/*********/godemo37.git' into base branch master
+
+Showing logs for build [32mjstrachan-environment-bucketrep-lsqgf-1[0m stage [32mpr-checks[0m and container [32mstep-create-helmfile[0m
+
+Showing logs for build [32mjstrachan-environment-bucketrep-lsqgf-1[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-system[0m
+Adding repo flagger https://flagger.app
+"flagger" has been added to your repositories
+
+Adding repo **-labs https://storage.googleapis.com/jenkinsxio-labs/charts
+"**-labs" has been added to your repositories
+
+Adding repo stable https://kubernetes-charts.storage.googleapis.com
+"stable" has been added to your repositories
+
+Updating repo
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "flagger" chart repository
+...Successfully got an update from the "**-labs" chart repository
+...Successfully got an update from the "stable" chart repository
+Update Complete. ⎈ Happy Helming!⎈ 
+
+helmfile.yaml: basePath=.
+
+hook[prepare] logs | customresourcedefinition.apiextensions.k8s.io/canaries.flagger.app unchanged
+hook[prepare] logs | customresourcedefinition.apiextensions.k8s.io/metrictemplates.flagger.app unchanged
+hook[prepare] logs | customresourcedefinition.apiextensions.k8s.io/alertproviders.flagger.app unchanged
+hook[prepare] logs | 
+Fetching **-labs/istio
+Fetching flagger/grafana
+Fetching **-labs/flagger-metrics
+Fetching stable/kuberhealthy
+Fetching flagger/flagger
+Linting release=istio, chart=/tmp/216565874/istio/0.0.21/**-labs/istio/istio
+==> Linting /tmp/216565874/istio/0.0.21/**-labs/istio/istio
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=flagger, chart=/tmp/216565874/flagger/0.24.0/flagger/flagger/flagger
+==> Linting /tmp/216565874/flagger/0.24.0/flagger/flagger/flagger
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=grafana, chart=/tmp/216565874/grafana/1.4.0/flagger/grafana/grafana
+==> Linting /tmp/216565874/grafana/1.4.0/flagger/grafana/grafana
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=flagger-metrics, chart=/tmp/216565874/flagger-metrics/0.0.8/**-labs/flagger-metrics/flagger-metrics
+==> Linting /tmp/216565874/flagger-metrics/0.0.8/**-labs/flagger-metrics/flagger-metrics
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=kuberhealthy, chart=/tmp/216565874/kuberhealthy/1.2.6/stable/kuberhealthy/kuberhealthy
+==> Linting /tmp/216565874/kuberhealthy/1.2.6/stable/kuberhealthy/kuberhealthy
+
+1 chart(s) linted, 0 chart(s) failed
+
+
+Showing logs for build [32mjstrachan-environment-bucketrep-lsqgf-1[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-apps[0m
+Adding repo jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
+
+Updating repo
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "flagger" chart repository
+...Successfully got an update from the "**-labs" chart repository
+...Successfully got an update from the "stable" chart repository
+...Successfully got an update from the "jenkins-x" chart repository
+Update Complete. ⎈ Happy Helming!⎈ 
+
+Building dependency release=repositories, chart=../repositories
+Fetching jenkins-x/**boot-helmfile-resources
+Fetching jenkins-x/lighthouse
+Fetching jenkins-x/bucketrepo
+Fetching jenkins-x/tekton
+Linting release=**boot-helmfile-resources, chart=/tmp/400839990/**boot-helmfile-resources/0.0.103/jenkins-x/**boot-helmfile-resources/**boot-helmfile-resources
+==> Linting /tmp/400839990/**boot-helmfile-resources/0.0.103/jenkins-x/**boot-helmfile-resources/**boot-helmfile-resources
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=lighthouse, chart=/tmp/400839990/lighthouse/0.0.493/jenkins-x/lighthouse/lighthouse
+==> Linting /tmp/400839990/lighthouse/0.0.493/jenkins-x/lighthouse/lighthouse
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=tekton, chart=/tmp/400839990/tekton/0.0.49/jenkins-x/tekton/tekton
+==> Linting /tmp/400839990/tekton/0.0.49/jenkins-x/tekton/tekton
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=bucketrepo, chart=/tmp/400839990/bucketrepo/0.1.35/jenkins-x/bucketrepo/bucketrepo
+==> Linting /tmp/400839990/bucketrepo/0.1.35/jenkins-x/bucketrepo/bucketrepo
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=repositories, chart=../repositories
+==> Linting ../repositories
+[INFO] Chart.yaml: icon is recommended
+[INFO] values.yaml: file does not exist
+
+1 chart(s) linted, 0 chart(s) failed
+
