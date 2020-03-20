@@ -21,7 +21,6 @@ environments:
 - ingress:
     domain: 35.240.16.53.nip.io
     externalDNS: false
-    kind: istio
     namespaceSubDomain: -jx.
     tls:
       email: ""
