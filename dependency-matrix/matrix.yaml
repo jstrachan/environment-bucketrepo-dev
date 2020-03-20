@@ -6,8 +6,8 @@ dependencies:
   version: ""
   versionURL: ""
 - host: github.com
-  owner: jstrachan
-  repo: godemo30
-  url: https://github.com/jstrachan/godemo30.git
+  owner: jenkins-x-labs
+  repo: jenkins-x-versions
+  url: https://github.com/jenkins-x-labs/jenkins-x-versions.git
   version: ""
   versionURL: ""
