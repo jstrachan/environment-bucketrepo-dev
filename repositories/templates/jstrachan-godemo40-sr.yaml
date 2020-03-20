@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jstrachan
+    provider: github
+    repository: godemo40
+  name: jstrachan-godemo40
+spec:
+  description: Imported application for jstrachan/godemo40
+  httpCloneURL: https://github.com/jstrachan/godemo40.git
+  org: jstrachan
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: godemo40
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/jstrachan/godemo40.git
