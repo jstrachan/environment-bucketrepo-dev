@@ -1,0 +1,32 @@
+
+Showing logs for build [32mmeta-jstrachan-environment-buck-klgkr-1[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-tlv4p[0m
+{"level":"warn","ts":1584700324.6455343,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584700324.6465166,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-jstrachan-environment-buck-klgkr-1[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-tv788[0m
+{"level":"warn","ts":1584700326.6259022,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1584700326.6275792,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mmeta-jstrachan-environment-buck-klgkr-1[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmeta-jstrachan-environment-buck-klgkr-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-jstrachan-environment-buck-klgkr-bvl8t[0m
+{"level":"warn","ts":1584700335.3670888,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584700336.456635,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/environment-bucketrepo-dev.git @ 6e4e594503a6d4a705c16fd84c44a7eeb5ac0f6d in path /workspace/source"}
+
+Showing logs for build [32mmeta-jstrachan-environment-buck-klgkr-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:6e4e594503a6d4a705c16fd84c44a7eeb5ac0f6d,2:42cc4bf1f0ada6c333a25550f03eb61a3e9dfd5b
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow 42cc4bf1f0ada6c333a25550f03eb61a3e9dfd5b: 6e4e594503a6d4a705c16fd84c44a7eeb5ac0f6d:
+DEBUG: ran git fetch --unshallow origin 42cc4bf1f0ada6c333a25550f03eb61a3e9dfd5b: 6e4e594503a6d4a705c16fd84c44a7eeb5ac0f6d: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard 6e4e594503a6d4a705c16fd84c44a7eeb5ac0f6d
+DEBUG: ran git reset --hard 6e4e594503a6d4a705c16fd84c44a7eeb5ac0f6d in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge 42cc4bf1f0ada6c333a25550f03eb61a3e9dfd5b
+error: error during merge: merging 42cc4bf1f0ada6c333a25550f03eb61a3e9dfd5b into master: git output: CONFLICT (rename/delete): repositories/templates/*********-nodey431-sr.yaml deleted in HEAD and renamed to repositories/templates/*********-godemo30-sr.yaml in 42cc4bf1f0ada6c333a25550f03eb61a3e9dfd5b. Version 42cc4bf1f0ada6c333a25550f03eb61a3e9dfd5b of repositories/templates/*********-godemo30-sr.yaml left in tree.
+Automatic merge failed; fix conflicts and then commit the result.: failed to run 'git merge 42cc4bf1f0ada6c333a25550f03eb61a3e9dfd5b' command in directory '', output: 'CONFLICT (rename/delete): repositories/templates/*********-nodey431-sr.yaml deleted in HEAD and renamed to repositories/templates/*********-godemo30-sr.yaml in 42cc4bf1f0ada6c333a25550f03eb61a3e9dfd5b. Version 42cc4bf1f0ada6c333a25550f03eb61a3e9dfd5b of repositories/templates/*********-godemo30-sr.yaml left in tree.
+Automatic merge failed; fix conflicts and then commit the result.'
+[31m
+Pipeline failed on stage 'meta-pipeline' : container 'step-git-merge'. The execution of the pipeline has stopped.[0m
